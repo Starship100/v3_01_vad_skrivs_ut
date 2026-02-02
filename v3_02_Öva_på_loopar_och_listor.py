@@ -27,8 +27,20 @@ print(sum)
 print("-----------------")
 
 # 3a
-film = "Alien, Interstellar, Avatar, Predator"
-film_list = film.split()
-for token in film_list:
-    film_list = film.strip()
-print(film_list)
+film = ["Alien", "Interstellar", "Avatar", "Predator"]
+print(film)
+film.append("Fellowship of the ring")
+print(film)
+film.insert(0, "The two towers")
+print(film)
+index = film.index("Fellowship of the ring")
+print(index)
+film.remove("Interstellar")
+print(film)
+index = film.index("Fellowship of the ring")
+print(index)
+print(len(film))
+film.reverse()
+print(film)
+film.sort()
+print(film)
