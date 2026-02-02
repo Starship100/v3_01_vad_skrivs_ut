@@ -52,7 +52,7 @@ print(message[4:8])
 print("-----------------")
 
 # Flytta linjen ett steg åt höger
-for y in range(2, 8):
+for y in range(1, 7):
     s = ""
     for x in range(1, 9):
         if x == y:
