@@ -9,11 +9,13 @@ print("="*35)
 
 # 1b
 answer = 0
+# for i in range(0, 101):
+#     answer += i
 i = 0
 while i < 100:
     i += 1
     answer += i
-print("Summan av talen 1 till 10 är: " + str(answer))
+print("Summan av talen 1 till 100 är: " + str(answer))
 
 print("="*35)
 
@@ -21,7 +23,7 @@ print("="*35)
 number_list = [1, -2, 3, -2, 4, -3]
 sum = 0
 for number in number_list:
-    sum = sum + number
+    sum += number
 print(sum)
 
 print("="*35)
@@ -42,7 +44,7 @@ print(index)
 print(len(film))
 film.reverse()
 print(film)
-film.sort()
+film.sort(reverse=True)
 print(film)
 
 print("="*75)
