@@ -1,4 +1,4 @@
-
+"""""
 # Skriver ut: 5,7,9,11,13,15
 limit = 15
 index = 5
@@ -52,11 +52,11 @@ print(message[4:8])
 # Nailed it
 
 print("-----------------")
-
+"""""
 # Flytta linjen ett steg åt höger
 for y in range(1, 7):
     s = ""
-    for x in range(1, 20):
+    for x in range(1, 9):
         if x == y + 1: # Flyttar stjärnan ett steg
             s += "#"
         else:
