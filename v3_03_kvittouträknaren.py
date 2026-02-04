@@ -1,6 +1,6 @@
 
-print("Välkommen till Kvittouträknaren! ")
-print("Avsluta genom att skriva 'quit' eller 'avsluta'.")
+print("Välkommen till Kvittouträknaren!")
+print("Avsluta genom att skriva 'q', 'quit' eller 'avsluta'.")
 
 antal_personer = int(input("Hur många personer är ni? "))
 user_input = input("Skriv in ett belopp: ")  # Lagrar användarens inmatade belopp. Används igen i while loop nedan
