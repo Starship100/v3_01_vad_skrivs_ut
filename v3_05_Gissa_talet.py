@@ -13,5 +13,4 @@ while random_tal != secret_nr:
         print("Nej, det är för högt!")
         random_tal = int(input("Gissa: "))
 else:
-    #random_tal == secret_nr:
-        print("Det är rätt!")
+    print("Det är rätt!")
