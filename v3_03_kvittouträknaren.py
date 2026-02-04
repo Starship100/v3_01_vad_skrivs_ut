@@ -25,10 +25,11 @@ if dricks_input == "":  # Om användare inte anger ngt värde = automatiskt 10% 
 else:
     dricks_procent = float(dricks_input) # Lägg inmatad % i variabeln 'dricks_procent'
 
-dricks_belopp = summa_tal * (dricks_procent / 100)  #
+dricks_belopp = summa_tal * (dricks_procent / 100)  # Räknar ut dricksen
 total_med_dricks = summa_tal + dricks_belopp  # Ny variabel lägger ihop summan av tal och dricks
 
 summa_per_person = total_med_dricks / antal_personer
 
 # print("Det blir " + str(total_med_dricks) + "kr totalt, alltså " + str(summa_per_person) + "kr per person. Välkommen åter!")
+# round( ,2) avrundar till 2 decimaler
 print("Det blir ", round(total_med_dricks, 2), "kr totalt, alltså ", round(summa_per_person, 2), "kr per person. Välkommen åter!")
