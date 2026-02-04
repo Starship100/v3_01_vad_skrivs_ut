@@ -30,4 +30,5 @@ total_med_dricks = summa_tal + dricks_belopp  # Ny variabel lägger ihop summan 
 
 summa_per_person = total_med_dricks / antal_personer
 
-print("Det blir " + str(total_med_dricks) + "kr totalt, alltså " + str(summa_per_person) + "kr per person. Välkommen åter!")
+# print("Det blir " + str(total_med_dricks) + "kr totalt, alltså " + str(summa_per_person) + "kr per person. Välkommen åter!")
+print("Det blir ", round(total_med_dricks, 2), "kr totalt, alltså ", round(summa_per_person, 2), "kr per person. Välkommen åter!")
