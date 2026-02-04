@@ -1,12 +1,13 @@
 
-print("Välkommen till Kvittouträknaren! Avsluta genom att skriva: quit")
-belopp = int(input("Skriv in ett belopp: "))
-summan_av_beloppen = 0
-i = 0
-while i <= belopp:
-    summan_av_beloppen += belopp
-    i += 1
-    print(summan_av_beloppen)
-else:
-    print(summan_av_beloppen)
+print("Välkommen till Kvittouträknaren! ")
+print("Avsluta genom att skriva 'quit' eller 'avsluta'.")
 
+summa_tal = 0
+user_input = input("Skriv in ett belopp: ")
+
+#while user_input != "q" and user_input != "quit" and user_input != "avsluta":
+while user_input not in ["q", "quit", "avsluta"]:
+    summa_tal += int(user_input)
+    user_input = input("Skriv in ett belopp: ")
+
+print("Det blir " + str(summa_tal) + "kr totalt. Välkommen åter!")
