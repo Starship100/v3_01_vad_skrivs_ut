@@ -1,7 +1,7 @@
 
-todo_list = []
-
 print("*** Todo List ***")
+
+todo_list = []
 
 while True:
     print("1. Se innehållet i din lista")
