@@ -83,23 +83,41 @@ for y in range(1, 7):
             s += "."
         elif y == 2 or y == 5 or x == 2 or x == 7:
             s += "#"
-        #elif x == 2 or x == 7:
-         #   s += "#"
         else:
             s += "."
     print(s)
 
 print("-"*30)
 #i
+# Använder modulo(%) = istället för att använda if x ==2 or x == 5...
 for y in range(1, 7):
     s = ""
     for x in range(1, 9):
-        if x == 2 or x == 5 or x == 8:
+        if (x - y) % 3 == 0:    # (x - y) för att mönstret ska backa ett steg
+            s += "."            # så att nästa rad börjar med det tecken som kom efter i förra raden
+        elif (x - y) % 3 == 1:
             s += "#"
-        elif  x == 3 or x == 6:
-            s += "0"
-        #elif x == 2 or x == 7:
-         #   s += "#"
         else:
+            s += "0"
+    print(s)
+
+print("-"*30)
+#j
+for y in range(1, 7):
+    s = ""
+    for x in range(1, 9):
+        if y < 4:
+            # Stolpar var tredje position
+            if (x + 1) % 3 == 1:
+                s += "#"
+            else:
+                s += "."
+        elif  y == 4:
             s += "."
+        else:
+            # Schackmönster växlar beroende på (x - y)
+            if (x + y) % 2 == 0:
+                s += "."
+            else:
+                s += "#"
     print(s)
