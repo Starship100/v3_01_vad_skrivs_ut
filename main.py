@@ -33,7 +33,7 @@ print("-----------------")
 # Fattar absolut INGENTING!
 x = 0
 y = 1   # y räknas bara upp med 1 per varv
-while x < 10:   # Totala värdet på x per varv
+while y < 10:   # Totala värdet på x per varv
     if y % 2 == 0:  # Jämna varvtal delbart med 2
         x -= y     # Dra bort värdet av y från x
     else:
