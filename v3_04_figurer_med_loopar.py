@@ -112,6 +112,7 @@ for y in range(1, 7):
                 s += "#"
             else:
                 s += "."
+            # Rad med punkter
         elif  y == 4:
             s += "."
         else:
