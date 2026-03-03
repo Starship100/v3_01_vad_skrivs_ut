@@ -44,7 +44,7 @@ print(index)
 print(len(film))
 film.reverse()
 print(film)
-film.sort(reverse=True)
+film.sort(reverse=False)
 print(film)
 
 print("="*75)
